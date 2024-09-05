@@ -1,36 +1,42 @@
-📊 Technical Analysis Dashboard
-📜 Description
-This Python-based Technical Analysis Dashboard application is designed to analyze and visualize stock data. Utilizing Plotly, yfinance, and TA-Lib libraries, it dynamically visualizes price movements and technical analysis indicators.
+# 📊 Teknik Analiz Pano
 
-🚀 Features
-📈 Candlestick Chart: Provides a detailed view of stock price movements.
-🔵 Simple Moving Average (SMA): Displays the 20-day average of price movements.
-🟢 Exponential Moving Average (EMA): Calculates the 15-day exponential average of price movements.
-📊 Bollinger Bands: Analyzes price volatility with upper, middle, and lower bands.
-📉 RSI (Relative Strength Index): Shows overbought or oversold conditions of the price.
-💻 Installation
-Install the required libraries using the following command:
+## 📜 Açıklama
 
+Bu Python tabanlı **Teknik Analiz Pano** uygulaması, hisse senedi verilerini analiz etmek ve görselleştirmek için tasarlanmıştır. **Plotly**, **yfinance**, ve **TA-Lib** kütüphanelerini kullanarak fiyat hareketlerini ve teknik analiz göstergelerini dinamik olarak görselleştirir.
+
+## 🚀 Özellikler
+
+- 📈 **Mum Grafiği**: Hisse senedi fiyat hareketlerinin detaylı bir görünümünü sağlar.
+- 🔵 **Basit Hareketli Ortalama (SMA)**: Fiyat hareketlerinin 20 günlük ortalamasını görüntüler.
+- 🟢 **Üstel Hareketli Ortalama (EMA)**: Fiyat hareketlerinin 15 günlük üstel ortalamasını hesaplar.
+- 📊 **Bollinger Bantları**: Üst, orta ve alt bantlarla fiyat oynaklığını analiz eder.
+- 📉 **RSI (Göreceli Güç Endeksi)**: Fiyatın aşırı alım veya aşırı satım koşullarını gösterir.
+
+## 💻 Kurulum
+
+Aşağıdaki komutu kullanarak gerekli kütüphaneleri yükleyin:
+
+```bash
 pip install plotly yfinance TA-Lib
-🔧 Usage
-Clone or download the project.
 
-Open the technical_analysis_dashboard.py file and import the necessary libraries.
+## 🔧 Kullanımı
 
-Run the application with:
+1. Projeyi kopyalayın veya indirin.
+2. `technical_analysis_dashboard.py` dosyasını açın ve gerekli kütüphaneleri içe aktarın.
+3. Uygulamayı şu şekilde çalıştırın:
 
-python technical_analysis_dashboard.py
-Enter the stock ticker symbol and start date.
+    ```bash
+    python technical_analysis_dashboard.py
+    ```
 
-📝 Example Usage
+4. Hisse senedi sembolünü ve başlangıç tarihini girin.
 
+## 📝 Örnek Kullanım
+
+```python
 if __name__ == "__main__":
-    ticker = input("Please enter the stock ticker symbol: ")
-    start_date = input("Please enter the start date (YYYY-MM-DD)")
+    ticker = input("Lütfen hisse senedi sembolünü giriniz: ")
+    start_date = input("Lütfen başlangıç tarihini giriniz (YYYY-AA-GG): ")
     dashboard = TechnicalAnalysisDashboard(ticker, start_date)
     dashboard.calculate_indicators()
     dashboard.create_plot()
-
-
-🌐 License
-This project is licensed under the MIT License. See the LICENSE File for details.
